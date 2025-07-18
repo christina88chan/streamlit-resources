@@ -1,5 +1,5 @@
-import streamlit as st
 import time
+import streamlit as st
 
 # --- Custom CSS for headers ---
 # The !important flag is used to ensure these styles override Streamlit's defaults.
@@ -69,6 +69,9 @@ def reset_stopwatch():
     st.session_state.running = False
     st.session_state.stop_offset = 0.0
 
+def balloons():
+    st.balloons()
+
 # --- Main Application Function ---
 def main():
     st.set_page_config(layout="wide") 
@@ -115,6 +118,7 @@ def main():
             formatted_time = f"{int(hours):02}:{int(minutes):02}:{seconds:05.2f}"
             time_placeholder.markdown(f"## {formatted_time}", unsafe_allow_html=False)
 
+    st.button("Click for a surprise!", on_click=balloons)
 
     # --- Main Content Area with Tabs ---
     # The sections you want to be clickable as tabs at the top of the main content area
