@@ -17,13 +17,13 @@ st.markdown("""
 
     /* Target links *within* h3 (st.subheader) */
     h3 a:link, h3 a:visited {
-        color: #bcd9ff; /* Periwinkle */
+        color: #bcd9ff; /* periwinkle */
         text-decoration: none; /* Optional: remove underline */
     }
 
     /* Optional: Change color on hover for links within h3 */
     h3 a:hover {
-        color: #bcfffe; /* Light Blue */
+        color: #bcfffe; /* light blue */
         text-decoration: underline; /* Optional: add underline on hover */
     }
 
@@ -33,11 +33,6 @@ st.markdown("""
     }
     a:hover {
         color: #0056b3;
-    }
-
-    /* Optional: General body text color for st.write and paragraphs */
-    body {
-        color: #333333; /* Dark grey for general body text */
     }
 </style>
 """, unsafe_allow_html=True)
@@ -77,8 +72,15 @@ def main():
     st.set_page_config(layout="wide") 
     st.title("Streamlit Resources and Demos")
 
-    # --- Sidebar Content (Stopwatch) ---
+    # ===== Sidebar =====
     with st.sidebar:
+        # --- User Input ---
+        name = st.text_input("What is your name?", placeholder="type your name here",)
+        if name:
+            st.title(f"*Welcome {name}!*")
+
+        st.markdown('##')
+        # --- Timer ---
         st.title("Time how long you explore!")
 
         col1, col2, col3 = st.columns(3)
@@ -90,10 +92,9 @@ def main():
         with col3:
             st.button("Reset", on_click=reset_stopwatch)
 
-        # Placeholder for the live stopwatch display
-        time_placeholder = st.empty() 
+        time_placeholder = st.empty() # placeholder for timer
 
-        # --- Live Stopwatch Display Logic ---
+        # - Live Stopwatch Display Logic -
         if st.session_state.running:
             # Loop while the stopwatch is running to update the display smoothly
             while st.session_state.running:
@@ -118,9 +119,12 @@ def main():
             formatted_time = f"{int(hours):02}:{int(minutes):02}:{seconds:05.2f}"
             time_placeholder.markdown(f"## {formatted_time}", unsafe_allow_html=False)
 
-    st.button("Click for a surprise!", on_click=balloons)
+        # --- Balloons ---
+        st.markdown('##')
+        st.title("Looking for fun?")
+        st.button("Click for a surprise!", on_click=balloons)
 
-    # --- Main Content Area with Tabs ---
+    # ===== Tabs ======
     # The sections you want to be clickable as tabs at the top of the main content area
     tab_resources, tab_live_assessment, tab_visuals, tab_demos = st.tabs([
         "Resources", 
@@ -167,7 +171,7 @@ def main():
 
     # Content for the "Live Assessment Tools" tab
     with tab_live_assessment:
-        st.header("💻Live Assessment Related Tutorials")
+        st.header("💻 Live Assessment Related Tutorials")
 
         col3, col4 = st.columns(2)
         with col3:
@@ -183,7 +187,7 @@ def main():
 
         with col4:
             st.subheader("Chatbot Demos")
-            st.markdown("---") # Sub-separator for chatbots
+            st.markdown("---")
             
             st.write("[**GPT Lab**](https://gptlab.streamlit.app/?ref=streamlit-io-gallery-trending)")
             st.write("Speak to pre-trained AI Assistants with different personalities and purposes, or create your own.")
