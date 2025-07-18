@@ -1,2 +1,4 @@
 # streamlit-resources
-streamlit resources for t4g
+
+streamlit resources I collected for t4g
+check out app here: https://t4g-st-resources.streamlit.app/
