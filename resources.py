@@ -161,8 +161,8 @@ def main():
         * Breaks down the formatting
         * Guides you through the code → follow along to experiment on your own
         """)
-
-        st.subheader("[3. GitHub - Learn how to build Streamlit application in Data Science](https://github.com/laxmimerit/streamlit-tutorials)")
+        st.subheader("[3. Streamlit API Reference](https://docs.streamlit.io/develop/api-reference)")
+        st.subheader("[4. GitHub - Learn how to build Streamlit application in Data Science](https://github.com/laxmimerit/streamlit-tutorials)")
         st.write("Github Tutorial for going through Streamlit functions.")
 
         st.subheader("[Streamlit-extras](https://extras.streamlit.app/?ref=streamlit-io-gallery-favorites)")
@@ -204,6 +204,9 @@ def main():
     # Content for the "Visuals" tab
     with tab_visuals:
         st.header("💐 Visuals")
+
+        st.subheader("[Anthropic Theming Example of Streamlit Elements](https://doc-theming-overview-anthropic-light-inspired.streamlit.app/)")
+        st.write("Highly recommend looking at this to see what you can incorporate into your projects.")
 
         st.subheader("[Make your Streamlit App Look Better | by Yash Chauhan | Accredian | Medium](https://medium.com/accredian/make-your-streamlit-web-app-look-better-14355c2db871)")
         st.write("How to improve UI of your Streamlit Project.")
