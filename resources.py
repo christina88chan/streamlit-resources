@@ -161,7 +161,10 @@ def main():
         * Breaks down the formatting
         * Guides you through the code → follow along to experiment on your own
         """)
+
         st.subheader("[3. Streamlit API Reference](https://docs.streamlit.io/develop/api-reference)")
+        st.write("Check out the code of Streamlit elements.")
+
         st.subheader("[4. GitHub - Learn how to build Streamlit application in Data Science](https://github.com/laxmimerit/streamlit-tutorials)")
         st.write("Github Tutorial for going through Streamlit functions.")
 
