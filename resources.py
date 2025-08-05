@@ -223,7 +223,7 @@ def main():
         st.subheader("[Streamlit emoji shortcodes](https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/)")
         st.write("How to implement emojis in your app. But I have been able to just type emojis directly.")
 
-        st.write("[Streamlit Elements](https://github.com/okld/streamlit-elements)")
+        st.subheader("[Streamlit Elements](https://github.com/okld/streamlit-elements)")
         st.write("Cool drag and drop components for Streamlit.")
 
         st.markdown("---")
