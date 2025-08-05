@@ -181,6 +181,9 @@ def main():
             st.subheader("Tutorials")
             st.markdown("---") # Separator
 
+            st.subheader("[How to Work with Databases in Streamlit](https://docs.streamlit.io/develop/tutorials/databases)")
+            st.write("Great for understanding how to connect to databases.")
+
             st.subheader("[How to Transcribe Audio to Text with AI and Streamlit](https://www.youtube.com/watch?v=JJEXqi85fOk)")
             st.write("Audio Transcription App")
 
@@ -219,7 +222,11 @@ def main():
 
         st.subheader("[Streamlit emoji shortcodes](https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/)")
         st.write("How to implement emojis in your app. But I have been able to just type emojis directly.")
-        st.markdown("---") 
+
+        st.write("[**Streamlit Elements**](https://github.com/okld/streamlit-elements)")
+        st.write("Cool drag and drop components for Streamlit.")
+
+        st.markdown("---")
 
     # Content for the "Fun Demos" tab
     with tab_demos:
