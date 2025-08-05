@@ -168,7 +168,7 @@ def main():
         st.subheader("[4. GitHub - Learn how to build Streamlit application in Data Science](https://github.com/laxmimerit/streamlit-tutorials)")
         st.write("Github Tutorial for going through Streamlit functions.")
 
-        st.subheader("5. [Streamlit-extras](https://extras.streamlit.app/?ref=streamlit-io-gallery-favorites)")
+        st.subheader("[5. Streamlit-extras](https://extras.streamlit.app/?ref=streamlit-io-gallery-favorites)")
         st.write("A library that allows you to simplify code/functions with emojis.")
         st.markdown("---") 
 
@@ -223,7 +223,7 @@ def main():
         st.subheader("[Streamlit emoji shortcodes](https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/)")
         st.write("How to implement emojis in your app. But I have been able to just type emojis directly.")
 
-        st.write("[**Streamlit Elements**](https://github.com/okld/streamlit-elements)")
+        st.write("[Streamlit Elements](https://github.com/okld/streamlit-elements)")
         st.write("Cool drag and drop components for Streamlit.")
 
         st.markdown("---")
