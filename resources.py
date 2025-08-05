@@ -168,7 +168,7 @@ def main():
         st.subheader("[4. GitHub - Learn how to build Streamlit application in Data Science](https://github.com/laxmimerit/streamlit-tutorials)")
         st.write("Github Tutorial for going through Streamlit functions.")
 
-        st.subheader("[Streamlit-extras](https://extras.streamlit.app/?ref=streamlit-io-gallery-favorites)")
+        st.subheader("5. [Streamlit-extras](https://extras.streamlit.app/?ref=streamlit-io-gallery-favorites)")
         st.write("A library that allows you to simplify code/functions with emojis.")
         st.markdown("---") 
 
